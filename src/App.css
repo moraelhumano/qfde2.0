@@ -1,38 +1,237 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'Nunito', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  border-bottom: solid 6px #627295;
+  font-family: 'Nunito', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*, ::after, ::before {
+  --tw-border-opacity: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-carousel {
+  width:  500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-fan{
+  width: 50vh;
+  height: auto;
+}
+
+
+.icons-podcast{
+  fill: #492d8c;
+  width: 3rem;
+  height: 3rem;
+}
+.shadow-navbar{
+  background-color: #7967c0;
+}
+
+.hero-home{
+  background-image: url("../src/bg-qfde.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-home{
+  background-image: url("../src/bg-qfde.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.background-projects{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.img-carousel{
+  height: 300px;
+}
+
+.thumb{
+  display: none !important;
+}
+
+.container-services{
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+
+}
+
+.title-section{
+  height: 5rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.title-section h3{
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle-section{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.subtitle-section p{
+  color: #2b2b2b;
+  font-weight: bold;
+  padding-bottom: 5px;
+  width: 40%;
+}
+
+.img-carousel-shows{
+  height: 500px;
+}
+
+.leading-normal {
+  font-family: 'Hina Mincho' !important;
+}
+
+.border-primary{
+  border: 1px solid rgba(213,51,105,1);
+  color:rgba(213,51,105,1);
+}
+
+.border-primary:hover{
+  background-color:#d53369 ;
+  color:#fff;
+}
+
+.button-home{
+  background-color:#fff ;
+  border: solid #2b2b2b 1px;
+  color:#2b2b2b;
+  height: 50px;
+  width: 250px;
+  align-self: center;
+}
+
+.button-home:hover{
+  background-color:#668ad8 ;
+  border-bottom: solid 0px #627295;
+  color:#fff;
+  border: .6;
+}
+
+.button-home{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ButtonColor*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.button-home:active {/*OnClick*/
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*Move down*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*Reduce Shadow*/
+  border-bottom: none;
+  background: #668ad8;
+}
+
+.hidden{
+  display: none !important;
+}
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 481px) {
+  
+  .hidden-desktop{
+    display: none ;
+  }
+  
+  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+  .background-rober{
+    background-image: none;
+  }
+
+  .hidden-mobile{
+    display: none ;
+  }
+
+  /* .hero-home{
+    background-image: url("../src/tiorober-bg.jpg");
+    text-align: center;
+  } */
+
+  .wrap-own{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hero-home-home{
+    height: 75vh;
+  }
+  
+
+  .display-none-s{
+      display: none !important;
+  }
+
+  .leading-3{
+      line-height: 3.5rem !important;
+  }
+
+  .sm-text-center{
+    text-align: center !important;
+  }
+
+  .sm-justify-center{
+    justify-content: center;
+  }
+
+  .sm-button-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .sm-button-content a{
+    display: flex;
+    justify-content: center;
+  }
+
+  .h-content-links{
+    height: auto;
+  }
+
+}
+
+
+
+
+
