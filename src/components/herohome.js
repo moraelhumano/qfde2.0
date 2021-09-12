@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
 import Fade from 'react-reveal/Fade';
+import RubberBand from 'react-reveal/RubberBand';
 
 import QFDELOGO from '../../src/logoqfde.png';
 import AppleLogo from '../../src/apple-podcasts.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { podcast } from '@fortawesome/free-solid-svg-icons'
 
 class HeroHome extends Component{
     render() {
         return (
         <>
-        <Fade>
         <div className="md:pt-24 hero-home hero-home-home h-auto flex-col flex jusify-center">
             <div className="container md:h-full px-3 mx-auto flex justify-center">
                 <div className="flex flex-col justify-center text-center flex-wrap md:flex-nowrap pt-20 md:pt-0">
+                    <RubberBand>
                     <div className="w-full flex justify-center">
                         <img className="mt-4 md:mt-0 w-10/12 md:max-w-full" src={QFDELOGO} />  
                     </div>
+                    </RubberBand>
+                    <Fade bottom>
                     <div className="max-w-screen-xl px-4  mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
                         <div className="flex justify-center items-center p-4 md:p-8 space-x-6 flex-wrap md:flex-nowrap mt-4 md:mt-0">
                             <h3 className="text-2xl md:text-4xl text-gray-800 font-bold leading-none text-center md:text-left">
@@ -37,6 +38,7 @@ class HeroHome extends Component{
                             </div>
                         </div>
                     </div>
+                    </Fade>
                 </div>
                 
             </div>
@@ -44,7 +46,6 @@ class HeroHome extends Component{
 
 
         </div>
-        </Fade>
         </>
 
         )

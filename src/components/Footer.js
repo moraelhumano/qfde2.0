@@ -8,7 +8,7 @@ class Footer extends Component{
     render() {
         return (
         <>
-        <section style={{backgroundColor:'#492d8c'}}>
+        <section style={{backgroundColor:'#46bfd7'}}>
             <div className="max-w-screen-xl  md:py-12 px-4 py-8 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
                 <div className="flex justify-center  space-x-6">
                     <a href="https://www.instagram.com/quefuepodcast/?hl=es" target="_blank" className="text-white">

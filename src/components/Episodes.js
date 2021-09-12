@@ -8,7 +8,7 @@ class Episodes extends Component{
         return (
         <>
         <section className="hero-home border-b md:mt-14 h-auto">
-        <Bounce right>
+        <Bounce top>
                     <div className="title-section">
                         <h3 className="text-3xl text-center text-gray-800 font-bold leading-none">
                             Últimos cápitulos
